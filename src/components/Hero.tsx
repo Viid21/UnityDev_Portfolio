@@ -32,7 +32,7 @@ export default function Hero() {
                         </p>
                         <p className="hero-bio">
                             My background combines programming and 3D art, which allows me to understand the
-                            full pipeline—from gameplay architecture and AI systems to shaders, rigging and
+                            full pipeline from gameplay architecture and AI systems to shaders, rigging and
                             animation. Although I eventually specialized in gameplay programming, this
                             multidisciplinary foundation helps me collaborate efficiently with artists,
                             designers and technical teams.
