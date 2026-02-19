@@ -22,7 +22,7 @@ const projects: Project[] = [
         title: "Golden Hand",
         description:
             "A dark action game featuring a protagonist with a supernatural golden mechanical hand. Built with custom physics interactions and VFX shaders.",
-        tag: "Unity · Action",
+        tag: "Unreal · VR · Scaperoom",
         icon: "✋",
         gradient: "linear-gradient(135deg, #111111 0%, #333333 100%)",
     },
@@ -34,15 +34,6 @@ const projects: Project[] = [
         tag: "Unity · AR · Mobile",
         icon: "👾",
         gradient: "linear-gradient(135deg, #1c1c1c 0%, #2a2a2a 100%)",
-    },
-    {
-        id: 4,
-        title: "Medic Combat",
-        description:
-            "A VR first-person game set in a combat zone where the player takes on the role of a field medic. Developed with OpenXR and optimized for standalone headsets.",
-        tag: "Unity · VR",
-        icon: "🏥",
-        gradient: "linear-gradient(135deg, #141414 0%, #282828 100%)",
     },
 ];
 
