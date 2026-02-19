@@ -3,7 +3,7 @@ export default function Footer() {
     return (
         <footer className="site-footer">
             <div className="container">
-                <p>© {year} David Rey · Unity Gameplay Developer</p>
+                <p>© {year} David Rey · Unity Developer</p>
             </div>
         </footer>
     );
