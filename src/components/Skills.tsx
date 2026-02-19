@@ -21,6 +21,13 @@ const skills: Skill[] = [
         tags: ["OpenXR", "XR Toolkit", "ARFoundation", "Oculus SDK", "Spatial UI"],
     },
     {
+        icon: "✨",
+        title: "Technical Art & VFX",
+        description:
+            "Creating performant realtime visual effects, custom shaders and stylized rendering pipelines. Experienced in Shader Graph, particle systems, material instancing and technical workflows bridging art and engineering.",
+        tags: ["Shader Graph", "VFX", "Particles", "Rendering", "Optimization"],
+    },
+    {
         icon: "⚡",
         title: "Performance Optimization",
         description:
@@ -34,6 +41,14 @@ const skills: Skill[] = [
             "Full 3D production pipeline knowledge spanning modelling, UV unwrapping, rigging, animation and real-time shader authoring in Shader Graph.",
         tags: ["Blender", "Shader Graph", "Rigging", "Animation", "PBR Materials"],
     },
+    {
+        icon: "🌐",
+        title: "Backend Web Development",
+        description:
+            "Building scalable backend services with Java and Spring Boot. Experience designing REST APIs, client‑server communication, authentication flows and database‑driven applications.",
+        tags: ["Java", "Spring Boot", "REST APIs", "MySQL", "MongoDB"],
+    },
+    
 ];
 
 export default function Skills() {
