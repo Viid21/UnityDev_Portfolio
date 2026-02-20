@@ -11,9 +11,10 @@ export default function Contact() {
 
                 <div className="contact-links">
                     <a
-                        id="contact-email"
                         className="contact-btn contact-btn-primary"
-                        href="mailto:21davidrey@gmail.com"
+                        href="/David_Rey_CV_Unity_Developer_2026_EN.pdf"
+                        download="David_Rey_CV_Unity_Developer_2026_EN.pdf"
+
                     >
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <rect x="2" y="4" width="20" height="16" rx="2" />
