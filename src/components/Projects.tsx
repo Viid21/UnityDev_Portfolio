@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import farmingHomeImage from "../assets/projects/farming/farmingHomeImage.jpg";
 import handHomeImage from "../assets/projects/hand/handHomeImage.gif";
 import monstersHomeImage from "../assets/projects/monsters/monstersHomeImage.png";
@@ -10,6 +12,7 @@ interface Project {
     image: string;
     gradient: string;
     imageOffset?: string;
+    awarded?: boolean;
 }
 
 const projects: Project[] = [
@@ -22,6 +25,7 @@ const projects: Project[] = [
         image: farmingHomeImage,
         gradient: "linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)",
         imageOffset: "center -100px",
+        awarded: true,
     },
     {
         id: 2,
@@ -32,6 +36,7 @@ const projects: Project[] = [
         image: handHomeImage,
         gradient: "linear-gradient(135deg, #111111 0%, #333333 100%)",
         imageOffset: "bottom",
+        awarded: true,
     },
     {
         id: 3,
@@ -41,7 +46,6 @@ const projects: Project[] = [
         tag: "Unity · AR · Mobile · Cloud",
         image: monstersHomeImage,
         gradient: "linear-gradient(135deg, #1c1c1c 0%, #2a2a2a 100%)",
-        imageOffset: "center",
     },
 ];
 
@@ -56,22 +60,33 @@ export default function Projects() {
 
                 <div className="projects-grid">
                     {projects.map((p) => (
-                        <div className="project-card" key={p.id}>
+                        <Link to={`/project/${p.id}`} key={p.id} className="project-card" style={{ textDecoration: "none" }}>
+    
+                            {p.awarded && (
+                                <div className="award-badge">
+                                    <svg className="award-badge-icon" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z"
+                                            stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                    <span className="award-badge-text">Awarded Project</span>
+                                </div>
+                            )}
+                        
                             <div className="project-img">
                                 <img
-                                  src={p.image}
-                                  alt={p.title}
-                                  className="project-image"
-                                  style={{ objectPosition: p.imageOffset || "center" }}
+                                    src={p.image}
+                                    alt={p.title}
+                                    className="project-image"
+                                    style={{ objectPosition: p.imageOffset || "center" }}
                                 />
                             </div>
-                    
+                        
                             <div className="project-card-body">
                                 <p className="project-tag">{p.tag}</p>
                                 <h3>{p.title}</h3>
                                 <p>{p.description}</p>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

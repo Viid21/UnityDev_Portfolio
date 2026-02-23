@@ -1,0 +1,160 @@
+.project-page {
+  position: relative;
+  min-height: 100vh;
+  color: var(--white);
+}
+
+/* Fons */
+.project-bg {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(0px);
+  transition: filter 0.4s ease;
+  z-index: -1;
+}
+
+.project-page:has(.project-panel:hover) .project-bg {
+  filter: blur(6px);
+}
+
+/* Panell */
+.project-panel {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background: var(--black);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  margin-top: 6rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.project-awards {
+  margin: 2rem 0 3rem;
+  padding: 1.5rem 1.8rem;
+  background: var(--dark2);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-awards .award {
+  font-size: 0.95rem;
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.award-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-svg {
+  width: 22px;
+  height: 22px;
+  color: var(--white);
+  opacity: 0.9;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  color: var(--light);
+}
+
+h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 1rem;
+  color: var(--light);
+  line-height: 1.7;
+}
+
+.project-panel h1 {
+  margin-bottom: 1.2rem;
+}
+
+.subtitle {
+  margin-bottom: 2.5rem !important;
+}
+
+/* Galeria */
+.gallery {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) transparent;
+}
+
+.gallery::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background: var(--mid);
+  border-radius: 10px;
+}
+
+.gallery::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gallery-img {
+  height: 180px;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal.open {
+  display: flex;
+}
+
+#modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Vídeo */
+.video-wrapper {
+  margin: 1rem 0 2rem;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
