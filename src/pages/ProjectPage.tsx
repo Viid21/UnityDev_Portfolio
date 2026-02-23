@@ -49,7 +49,7 @@ export default function FarmingPage() {
                 <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
-            Awarded <strong>“Best Project of the Year”</strong> at Deia Escola d’Art i Disseny (2023)
+            Awarded <strong>“Best Project of the Year”</strong> at Deia Escola d'Art i Disseny (2023)
             <span className="award-icon">
               <svg className="award-svg" viewBox="0 0 24 24" fill="none">
                 <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -63,7 +63,7 @@ export default function FarmingPage() {
                 <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
-            Finalist at <strong>Indie Games Málaga</strong> (2023)
+            Finalist at <strong>Indie Games Málaga</strong> (2024)
             <span className="award-icon">
               <svg className="award-svg" viewBox="0 0 24 24" fill="none">
                 <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
