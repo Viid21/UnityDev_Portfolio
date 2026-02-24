@@ -7,7 +7,9 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import ProjectPage from "./pages/ProjectPage";
+import FarmingPage from "./pages/FarmingPage";
+import GoldenHandPage from "./pages/GoldenHandPage";
+import AtrapamonstresPage from "./pages/AtrapamonstresPage";
 
 function App() {
   return (
@@ -28,7 +30,9 @@ function App() {
             }
           />
 
-          <Route path="/project/:id" element={<ProjectPage />} />
+          <Route path="/project/1" element={<FarmingPage />} />
+          <Route path="/project/2" element={<GoldenHandPage />} />
+          <Route path="/project/3" element={<AtrapamonstresPage />} />
         </Routes>
       </main>
 

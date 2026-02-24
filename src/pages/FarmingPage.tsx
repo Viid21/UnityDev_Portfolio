@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 import "../styles/projectPages.css";
 
 import farmingBg from "../assets/projects/farming/farmingBg.jpg";
@@ -11,11 +10,6 @@ import farmingGameplayNight from "../assets/projects/farming/farmingGameplayNigh
 import farmingDaltonism from "../assets/projects/farming/farmingDaltonismFilter.png";
 
 export default function FarmingPage() {
-  const { id } = useParams();
-
-  // De moment només tens el projecte 1 complet
-  if (id !== "1") return <p style={{ padding: "4rem" }}>Project not found.</p>;
-
   const gallery = [
     farming1,
     farming3,
@@ -29,30 +23,33 @@ export default function FarmingPage() {
   return (
     <div className="project-page">
 
-      {/* Fons */}
+      {/* Background */}
       <div
         className="project-bg"
         style={{ backgroundImage: `url(${farmingBg})` }}
       />
 
-      {/* Panell */}
+      {/* Panel */}
       <div className="project-panel">
 
-        <h1>A non farming game — Unity Gameplay Programmer</h1>
-        <h2 className="subtitle">Gameplay Systems & Accessibility-Focused Unity Development</h2>
+        <h1>A Non Farming Game — Unity Gameplay Programmer</h1>
+        <h2 className="subtitle">Gameplay Systems & Accessibility‑Focused Unity Development</h2>
 
+        {/* Awards */}
         <div className="project-awards">
 
           <div className="award">
             <span className="award-icon">
               <svg className="award-svg" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z"
+                  stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
             Awarded <strong>“Best Project of the Year”</strong> at Deia Escola d'Art i Disseny (2023)
             <span className="award-icon">
               <svg className="award-svg" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z"
+                  stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
           </div>
@@ -60,43 +57,49 @@ export default function FarmingPage() {
           <div className="award">
             <span className="award-icon">
               <svg className="award-svg" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z"
+                  stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
             Finalist at <strong>Indie Games Málaga</strong> (2024)
             <span className="award-icon">
               <svg className="award-svg" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 3L14.09 8.26L20 9.27L15.5 13.14L16.82 19.02L12 16L7.18 19.02L8.5 13.14L4 9.27L9.91 8.26L12 3Z"
+                  stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </span>
           </div>
 
         </div>
 
+        {/* Intro */}
         <p className="intro">
-          Sole programmer responsible for <strong>gameplay architecture</strong>, <strong>AI systems</strong>, <strong>UI accessibility</strong>, 
-          and <strong>performance optimization</strong> in a production environment. Built <strong>scalable systems</strong> supporting 
+          Sole programmer responsible for <strong>gameplay architecture</strong>, <strong>AI systems</strong>, <strong>UI accessibility</strong>,
+          and <strong>performance optimization</strong> in a production environment. Built <strong>scalable systems</strong> supporting
           exploration, combat, and dynamic game states.
         </p>
 
+        {/* Core Contributions */}
         <h3>Core Contributions</h3>
         <ul>
           <li>Designed <strong>mission and dialogue systems</strong> using <strong>Scriptable Objects</strong> + <strong>FSM architecture</strong></li>
-          <li>Implemented <strong>Player Controller</strong> with <strong>Unity New Input System</strong></li>
+          <li>Implemented <strong>Player Controller</strong> with the <strong>Unity New Input System</strong></li>
           <li>Developed <strong>enemy AI</strong> with <strong>NavMesh pathfinding</strong> and <strong>perception logic</strong></li>
           <li>Created <strong>boss encounters</strong> using modular <strong>finite state machines</strong></li>
-          <li>Implemented <strong>aim assist</strong> and <strong>vission-based enemy detection</strong></li>
-          <li>Built <strong>dynamic day/night gameplay state system</strong></li>
+          <li>Implemented <strong>aim assist</strong> and <strong>vision‑based enemy detection</strong></li>
+          <li>Built a <strong>dynamic day/night gameplay state system</strong></li>
         </ul>
 
+        {/* UI & Accessibility */}
         <h3>UI & Accessibility</h3>
         <ul>
           <li>Adjustable <strong>text scaling</strong> for readability</li>
           <li><strong>Color accessibility settings</strong> for visual perception needs</li>
           <li>Assistive <strong>aiming</strong> and <strong>minimap navigation systems</strong></li>
-          <li>Designed <strong>usability focused UI architecture</strong></li>
+          <li>Designed a <strong>usability‑focused UI architecture</strong></li>
         </ul>
 
+        {/* Technical Art */}
         <h3>Technical Art & Optimization</h3>
         <ul>
           <li><strong>Shader Graph</strong> visual effects and gameplay feedback shaders</li>
@@ -104,13 +107,15 @@ export default function FarmingPage() {
           <li>Realtime <strong>performance profiling</strong> and tuning</li>
         </ul>
 
+        {/* Production Context */}
         <h3>Production Context</h3>
         <ul>
           <li>Full <strong>system ownership</strong> from implementation to debugging</li>
-          <li>Developed within <strong>collaborative production pipeline</strong></li>
+          <li>Developed within a <strong>collaborative production pipeline</strong></li>
           <li>Focus on <strong>maintainability</strong>, <strong>scalability</strong>, and <strong>runtime efficiency</strong></li>
         </ul>
 
+        {/* Video */}
         <h3>Gameplay Video</h3>
         <div className="video-wrapper">
           <iframe
@@ -120,6 +125,7 @@ export default function FarmingPage() {
           />
         </div>
 
+        {/* Gallery */}
         <h3>Gallery</h3>
         <div className="gallery">
           {gallery.map((img, i) => (

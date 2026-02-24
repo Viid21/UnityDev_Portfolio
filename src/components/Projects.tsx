@@ -46,6 +46,7 @@ const projects: Project[] = [
         tag: "Unity · AR · Mobile · Cloud",
         image: monstersHomeImage,
         gradient: "linear-gradient(135deg, #1c1c1c 0%, #2a2a2a 100%)",
+        imageOffset: "center -145px",
     },
 ];
 
