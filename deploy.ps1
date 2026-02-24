@@ -1,46 +1,43 @@
-Write-Host "=== DEPLOY SCRIPT FOR GH-PAGES ==="
+Write-Host "=== CLEAN DEPLOY TO GH-PAGES ==="
 
-# 1) Ensure we are in the project root
+# 1) Go to project root
 Write-Host "Current directory: $PWD"
 
 # 2) Switch to main
 Write-Host "Switching to main..."
 git checkout main
 
-# 3) Install dependencies (optional but safe)
+# 3) Delete remote gh-pages
+Write-Host "Deleting remote gh-pages (if exists)..."
+git push origin --delete gh-pages 2>$null
+
+# 4) Delete local gh-pages
+Write-Host "Deleting local gh-pages (if exists)..."
+git branch -D gh-pages 2>$null
+
+# 5) Install dependencies
 Write-Host "Installing dependencies..."
 npm install
 
-# 4) Build project
+# 6) Build project
 Write-Host "Building project..."
 npm run build
 
-# 5) Create gh-pages branch if it doesn't exist
-$branchExists = git branch --list gh-pages
+# 7) Create new gh-pages branch
+Write-Host "Creating new gh-pages branch..."
+git checkout -b gh-pages
 
-if (-not $branchExists) {
-    Write-Host "gh-pages branch does not exist. Creating it..."
-    git checkout -b gh-pages
-} else {
-    Write-Host "Switching to existing gh-pages branch..."
-    git checkout gh-pages
-}
-
-# 6) Delete everything except .git
-Write-Host "Cleaning gh-pages branch..."
-Get-ChildItem -Force | Where-Object { $_.Name -notmatch '^\.git$' } | Remove-Item -Recurse -Force
-
-# 7) Copy dist content
+# 8) Copy dist content into branch root
 Write-Host "Copying build files..."
-Copy-Item -Path "..\UnityDev_Portfolio\dist\*" -Destination "." -Recurse -Force
+Copy-Item -Path ".\dist\*" -Destination "." -Recurse -Force
 
-# 8) Commit and push
-Write-Host "Committing changes..."
+# 9) Commit and push
+Write-Host "Committing and pushing..."
 git add .
-git commit -m "Automated deploy"
+git commit -m "clean deploy"
 git push -u origin gh-pages
 
-# 9) Return to main
+# 10) Return to main
 Write-Host "Returning to main..."
 git checkout main
 
