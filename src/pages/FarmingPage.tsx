@@ -33,7 +33,7 @@ export default function FarmingPage() {
       <div className="project-panel">
 
         <h1>A Non Farming Game — Unity Gameplay Programmer</h1>
-        <h2 className="subtitle">Gameplay Systems & Accessibility‑Focused Unity Development</h2>
+        <h2 className="subtitle">Gameplay Systems & Accessibility-Focused Unity Development</h2>
 
         {/* Awards */}
         <div className="project-awards">
@@ -86,7 +86,7 @@ export default function FarmingPage() {
           <li>Implemented <strong>Player Controller</strong> with the <strong>Unity New Input System</strong></li>
           <li>Developed <strong>enemy AI</strong> with <strong>NavMesh pathfinding</strong> and <strong>perception logic</strong></li>
           <li>Created <strong>boss encounters</strong> using modular <strong>finite state machines</strong></li>
-          <li>Implemented <strong>aim assist</strong> and <strong>vision‑based enemy detection</strong></li>
+          <li>Implemented <strong>aim assist</strong> and <strong>enemy detection</strong></li>
           <li>Built a <strong>dynamic day/night gameplay state system</strong></li>
         </ul>
 
@@ -96,7 +96,7 @@ export default function FarmingPage() {
           <li>Adjustable <strong>text scaling</strong> for readability</li>
           <li><strong>Color accessibility settings</strong> for visual perception needs</li>
           <li>Assistive <strong>aiming</strong> and <strong>minimap navigation systems</strong></li>
-          <li>Designed a <strong>usability‑focused UI architecture</strong></li>
+          <li>Designed a <strong>UI architecture</strong></li>
         </ul>
 
         {/* Technical Art */}

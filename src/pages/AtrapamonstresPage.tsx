@@ -21,39 +21,41 @@ export default function AtrapamonstresPage() {
 
         {/* Intro */}
         <p className="intro">
-          Worked on a live, published <strong>mobile AR experience</strong>, implementing augmented reality features,
-          player-facing systems, and <strong>cloud-backed data workflows</strong> within a continuous production pipeline.
+          I worked on a live, published <strong>mobile AR game</strong>, building new features,
+          improving player feedback, and managing <strong>player data with Unity cloud</strong> as part
+          of an ongoing production environment.
         </p>
 
         {/* Core Contributions */}
-        <h3>Core Contributions</h3>
+        <h3>What I worked on</h3>
         <ul>
-          <li>Integrated <strong>AR functionality</strong> using <strong>Vuforia</strong> within Unity</li>
-          <li>Implemented new gameplay features and maintained <strong>production code</strong> in an active release environment</li>
-          <li>Developed <strong>Android-ready builds</strong> with a focus on stability and device compatibility</li>
-          <li>Created <strong>VFX</strong> and player feedback systems to improve interaction clarity and responsiveness</li>
+          <li>Integrated AR features using <strong>Vuforia</strong> in Unity</li>
+          <li>Implemented gameplay features and fixed issues in a live production build</li>
+          <li>Prepared and maintained <strong>Android builds</strong> across different devices</li>
+          <li>Created <strong>VFX and visual feedback</strong> to make player interactions clearer and more responsive</li>
         </ul>
 
         {/* Cloud & Data */}
-        <h3>Cloud, Data & Analytics</h3>
+        <h3>Cloud & Player Data</h3>
         <ul>
-          <li>Implemented <strong>Unity Cloud</strong> services for player data management</li>
-          <li>Structured <strong>SQL-based data storage</strong> for persistence and tracking</li>
-          <li>Supported analytics-driven iteration through <strong>player data monitoring</strong></li>
+          <li>Used <strong>Unity Cloud services</strong> to manage player data</li>
+          <li>Worked with <strong>SQL database</strong> for persistence and tracking</li>
+          <li>Used player data to support iteration and feature decisions</li>
         </ul>
 
         {/* Technical Art */}
-        <h3>Technical Art & UX</h3>
+        <h3>Visual Feedback & Performance</h3>
         <ul>
-          <li>Designed <strong>visual feedback</strong> to reinforce AR interactions and gameplay readability</li>
-          <li>Balanced real-time effects with <strong>mobile performance constraints</strong></li>
+          <li>Designed visual feedback to help players understand AR interactions</li>
+          <li>Balanced visual quality with <strong>mobile performance constraints</strong></li>
         </ul>
 
         {/* Production Context */}
         <h3>Production Context</h3>
         <ul>
-          <li>Continuous deployment environment with <strong>live maintenance responsibilities</strong></li>
-          <li>Focus on <strong>reliability</strong>, <strong>scalability</strong>, and <strong>user-facing polish</strong> in a published mobile AR product</li>
+          <li>Worked in a <strong>continuous production environment</strong> with regular updates</li>
+          <li>Maintained and improved a <strong>published mobile AR project</strong></li>
+          <li>Focused on stability, usability, and real-world device performance</li>
         </ul>
 
         {/* Video */}
