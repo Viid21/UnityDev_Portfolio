@@ -115,6 +115,17 @@ export default function FarmingPage() {
           <li>Focus on <strong>maintainability</strong>, <strong>scalability</strong>, and <strong>runtime efficiency</strong></li>
         </ul>
 
+        {/* Itch.io Link */}
+        <h3>Play on Itch.io</h3>
+        <a 
+          href="https://vid21.itch.io/a-non-farming-game" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="itch-link"
+        >
+          ▶ Play A Non Farming Game on Itch.io
+        </a>
+
         {/* Video */}
         <h3>Gameplay Video</h3>
         <div className="video-wrapper">

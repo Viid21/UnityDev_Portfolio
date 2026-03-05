@@ -158,3 +158,19 @@ ul {
   height: 100%;
   border: none;
 }
+
+.itch-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.6rem 1rem;
+  background: #fa5c5c;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.itch-link:hover {
+  background: #ff3b3b;
+}
