@@ -12,8 +12,8 @@ export default function Contact() {
                 <div className="contact-links">
                     <a
                         className="contact-btn contact-btn-primary"
-                        href="/David_Rey_CV_Unity_Developer_2026_EN.pdf"
-                        download="David_Rey_CV_Unity_Developer_2026_EN.pdf"
+                        href="/UnityDev_Portfolio/David_Rey_Cv.pdf"
+                        download="David_Rey_Cv.pdf"
 
                     >
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
