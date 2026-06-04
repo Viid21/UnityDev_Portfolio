@@ -24,11 +24,16 @@ export default function Hero() {
                         <div className="hero-about-label">About Me</div>
 
                         <p className="hero-bio">
-                            I am a Unity Gameplay Developer and Technical Artist with experience working in real
-                            production environments, contributing to gameplay systems, performance optimization
-                            and VR/AR development. Over the past years I have worked on both independent and
-                            professional projects, taking part in feature implementation, debugging, visual
-                            effects, and real-time optimization.
+                            I am a Unity & Unreal Developer and Technical Artist with 3 years of experience shipping PC, 
+                            mobile, VR, and AR projects. Strong foundation in C# programming, gameplay systems, 
+                            shader development, and real-time performance optimization across both engines. 
+                            Proficient in Unity tooling including Shader Graph, Scriptable Objects, FSMs, Profiler, 
+                            and Frame Debugger, as well as 2D and 3D pipelines. Experienced in Unreal Engine for 
+                            VR development, with deep knowledge of draw call optimization and engine debugging 
+                            workflows. Familiar with CI/CD pipelines using Git and Unity Cloud Build, asset 
+                            management best practices, and version control in team environments. Committed to 
+                            delivering production-quality work with a focus on performance, visual quality, and clean 
+                            technical execution. 
                         </p>
                         <p className="hero-bio">
                             My background combines programming and 3D art, which allows me to understand the
@@ -48,7 +53,7 @@ export default function Hero() {
                     <div className="hero-portrait-wrap">
                         <div className="portrait-accent" />
                         <div className="hero-portrait-frame">
-                            <img src={portrait} alt="David Rey – Unity Developer" />
+                            <img src={portrait} alt="David Rey - Unity Developer" />
                         </div>
                         <div className="portrait-accent-2" />
                     </div>

@@ -1,3 +1,4 @@
+# 0) ./deploy.ps1
 Write-Host "=== CLEAN DEPLOY TO GH-PAGES ==="
 
 # 1) Go to project root
