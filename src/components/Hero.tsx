@@ -19,7 +19,7 @@ export default function Hero() {
                             </a>
                         </p>
 
-                        <h1 className="hero-title">Unity<br />Developer</h1>
+                        <h1 className="hero-title">Technical Artist<br />Gameplay Programmer</h1>
 
                         <div className="hero-about-label">About Me</div>
 
